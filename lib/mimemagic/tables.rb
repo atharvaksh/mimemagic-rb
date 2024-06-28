@@ -73,6 +73,7 @@ class MimeMagic
     file = open_mime_database
 
     doc = Nokogiri::XML(file)
+    file.close
     extensions = {}
     types = {}
     magics = []
